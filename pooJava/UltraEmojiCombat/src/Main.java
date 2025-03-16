@@ -8,9 +8,17 @@ public class Main {
         l[4] = new Lutador("Ufoput", "Brasil", 37, 1.70f, 119.3f, 5, 4, 3);
         l[5] = new Lutador("Nerdaard", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);
 
-        for(Lutador lutador : l){
+        /*for(Lutador lutador : l){
             lutador.status();
             System.out.println();
-        }
+        }*/
+
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(l[0], l[1]);
+        UEC01.lutar();
+
+        System.out.println();
+        l[0].status();
+        l[1].status();
     }
 }
